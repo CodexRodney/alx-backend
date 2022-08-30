@@ -14,3 +14,7 @@ def home_page() -> None:
     returns a template
     """
     return render_template('index.html')
+
+
+if name == "__main__":
+    app.run()
