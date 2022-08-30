@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def home_page() -> None:
+def home_page() -> str:
     """
     returns a template
     """
