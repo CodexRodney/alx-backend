@@ -3,7 +3,7 @@
 Set up for a simple Flask app
 """
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
