@@ -53,10 +53,15 @@ def get_user() -> Optional[dict]:
             return users[user_id]
     return None
 
+
 @app.before_request
 def before_request():
+    """
+    sets g.user before every request
+    """
     user = get_user()
     g.user = user
+
 
 @app.route("/")
 def Hello() -> str:
